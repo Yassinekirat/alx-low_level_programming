@@ -1,12 +1,13 @@
 #include<stdio.h>
-/*
-* Use the function puts
-* You are not allowed to use printf
-* Your program should end with the value 0
+/**
+ * main - Entry point
+ *
+ * Description: Printing in C using puts function
+ *
+ * return: 0 if successful else 1
 */
-
 int main(void)
 {
-        puts("\"Programming is like building a multilingual puzzle");
-        return (0);
+	puts("\"Programming is like building a multilingual puzzle");
+	return	(0);
 }
