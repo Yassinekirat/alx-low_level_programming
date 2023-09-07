@@ -4,7 +4,7 @@
  *
  * Description: Printing in C using puts function
  *
- * return: Always 0 when success
+ * return: Always 0 (Success)
 */
 int main(void)
 {
