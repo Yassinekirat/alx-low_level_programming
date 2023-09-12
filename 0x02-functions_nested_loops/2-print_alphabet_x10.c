@@ -3,7 +3,7 @@
  * print_alphabet_x10 - printing alphabet ten times
  */
 
-void print_alphabet_x10(void);
+void print_alphabet_x10(void)
 {
 	int a = 'a';
 	int i;
