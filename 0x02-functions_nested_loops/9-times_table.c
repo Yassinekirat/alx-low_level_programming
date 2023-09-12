@@ -17,13 +17,15 @@ void times_table(void)
 			result = n1 * n2;
 
 			if (result < 10)
+			{
 				_putchar(' ');
 				_putchar(' ');
+			}
 			else
-				_putchar(',');
+			{	_putchar(',');
 				_putchar(' ');
 				_putchar((result / 10) + '0');
-
+			}
 			_putchar((result % 10) + '0');
 		}
 		_putchar ('\n');
