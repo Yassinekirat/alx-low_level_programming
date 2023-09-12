@@ -13,9 +13,9 @@ int main(void)
 	n = 0;
 	while (n < 1024)
 	{
-		if (i % 5 == 0 || i % 3 == 0)
+		if (n % 5 == 0 || n % 3 == 0)
 			result = result + n;
-		n++
+		n++;
 	}
 	printf("%d\n", result);
 
