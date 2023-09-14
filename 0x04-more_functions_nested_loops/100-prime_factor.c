@@ -7,7 +7,11 @@
  */
 int main(void)
 {
-	long long int i, j, k;
+	int x;
 
-	i = 612852475143;
+	x= 2;
+
+	printf("%d", x);
+
+	return (0);
 }
