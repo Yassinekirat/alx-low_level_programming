@@ -15,11 +15,17 @@ void print_diagonal(int n)
 	{
 		for (row = 1; row <= n; row++)
 		{
-			for (vide = 1; vide <= row ; vide++)
+			for (vide = 1; vide <= n ; vide++)
 			{
-				_putchar(' ');
+				if (row == vide)
+				{
+					_putchar('\\');
+				}
+				else if (row > vide)
+				{
+					_putchar(' ');
+				}
 			}
-			_putchar('\\');
 			_putchar('\n');
 		}
 	}
