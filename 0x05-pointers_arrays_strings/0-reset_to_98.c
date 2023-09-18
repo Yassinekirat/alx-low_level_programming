@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * reset_to_98 - reset pointer parameter 
+ * reset_to_98 - reset pointer parameter
  *
  * @n: the pointer to be tested
  *
