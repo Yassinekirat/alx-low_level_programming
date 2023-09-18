@@ -13,7 +13,7 @@ void print_array(int *a, int n)
 
 	for (index = 0; index < n; index++)
 	{
-		if (index == 0)
+		if (index != n - 1)
 		{
 			printf("%d, ", a[index]);
 		}
@@ -22,5 +22,5 @@ void print_array(int *a, int n)
 			printf("%d", a[index]);
 		}
 	}
-	printf("\n");
+	_putchar('\n');
 }
