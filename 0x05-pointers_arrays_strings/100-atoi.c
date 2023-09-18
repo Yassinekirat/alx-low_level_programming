@@ -13,14 +13,14 @@ int _atoi(char *s)
 
 	n = 0;
 	sign = 1;
-	
+
 	for (; *s; *s++)
 	{
 		if (*s == 45)
 		{
 			sign = sign * -1;
 		}
-		else if(*s >= 48 && *s <= 57)
+		else if (*s >= 48 && *s <= 57)
 		{
 			num = (num * 10) + (*s - 48);
 		else if (num > 0)
@@ -28,4 +28,5 @@ int _atoi(char *s)
 			break;
 		}
 	}
-}	return (n * sign);
+	return (n * sign);
+}
