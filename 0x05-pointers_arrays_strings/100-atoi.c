@@ -15,15 +15,16 @@ int _atoi(char *s)
 	n = 0;
 	sign = 1;
 
-	for (i = 0; s[i]; *s++)
+	for (i = 0; s[i]; s++)
 	{
-		if (*s[i] == 45)
+		if (s[i] == 45)
 		{
 			sign = sign * -1;
 		}
 		else if (s[i] >= 48 && s[i] <= 57)
 		{
 			n = (n * 10) + (s[i] - 48);
+		}
 		else if (n > 0)
 		{
 			break;
