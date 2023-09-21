@@ -19,7 +19,7 @@ char *cap_string(char *cap)
 		if (cap[c] == ',' || cap[c] == ';' || cap[c] == '.' || cap[c] == '!' ||
 		    cap[c] == '?' || cap[c] == '"' || cap[c] == '(' || cap[c] == ')' ||
 		    cap[c] == '{' || cap[c] == '}' || cap[c] == ' ' || cap[c] == '\n' ||
-		    cap[c] == '\t' || cap[c] == 0)
+		    cap[c] == '\t' || c == 0)
 		{
 			if (cap[c + 1] >= 'a' && cap[c + 1] <= 'z')
 				cap[c] = cap[c] - 32;
