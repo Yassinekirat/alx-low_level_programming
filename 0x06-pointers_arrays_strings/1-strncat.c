@@ -1,24 +1,26 @@
 #include "main.h"
 
 /**
- * _strcat - concatenates dest and src
+ * _strncat - concatenates dest and src
  *
  * @dest: string to be tested
  * @src: string to be tested
- *
- * Return: string dest
+ * @n: num of bytes
+ * Return:  string dest
  */
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
-	int l;
-	int index;
+	int l, index;
 
 	for (l = 0; dest[l] != '\0'; l++)
 		;
 	for (index = 0; src[index] != '\0'; index++)
 	{
-		dest[l] = src[index];
-		l++;
+		if (index < n)
+		{
+			dest[l] = src[index];
+			l++;
+		}
 	}
 	dest[l] = '\0';
 	return (dest);
