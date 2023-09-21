@@ -22,7 +22,7 @@ char *cap_string(char *cap)
 		    cap[c] == '\t' || c == 0)
 		{
 			if (cap[c + 1] >= 'a' && cap[c + 1] <= 'z')
-				cap[c + 1] = cap[c+1] - 32;
+				cap[c + 1] = cap[c + 1] - 32;
 		}
 	}
 	return (cap);
