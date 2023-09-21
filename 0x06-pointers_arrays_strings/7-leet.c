@@ -11,5 +11,5 @@
  */
 char *leet(char *l)
 {
-
+	return (l);
 }
