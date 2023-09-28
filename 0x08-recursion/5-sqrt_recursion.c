@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * squar_root - a function that printf  the natural square root of a number
+ * square_root - a function that printf  the natural square root of a number
  *
  * @n: integer to be tested
  *
