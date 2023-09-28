@@ -1,8 +1,12 @@
 #include "main.h"
 /**
- * is_prime_number - a function that check prime number
+ * is_palindrome - a function that check prime number
  *
- * @n: integer to be tested
+ * @s: string to be tested
  *
- * Return: true or false
+ * Return: 1 if true or 0 if false
  */
+int is_palindrome(char *s)
+{
+	return (0);
+}
