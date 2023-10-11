@@ -1,10 +1,6 @@
 #ifndef CALC_H
 #define CALC_H
 
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
-#include <stddef.h>
 /**
  * struct op - structure
  * @op: variable to be tested
