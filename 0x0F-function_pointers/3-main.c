@@ -11,6 +11,7 @@ int main(int argc, char *argv[])
 	char p;
 	int (*op)(int, int);
 	int n1, n2;
+	int res;
 
 	n1 = atoi(argv[1]);
 	p = *argv[2];
@@ -33,8 +34,8 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (100);
 	}
-
-	printf("%d\n", op(n1, n2));
+	res = op(n1, n2);
+	printf("%d\n", res);
 
 	return (0);
 }
