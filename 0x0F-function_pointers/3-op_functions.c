@@ -14,7 +14,7 @@ int op_add(int a, int b)
 
 /**
  * op_sub - subtraction of two integers
- * @a: int to be tested 
+ * @a: int to be tested
  * @b: int to be tested
  *
  * Return: subtraction result
