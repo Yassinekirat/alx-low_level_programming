@@ -4,7 +4,7 @@
  * print_numbers - function that prints numbers
  *
  * @separator: the separator
- * @n: variable number to be tested
+ * @n: variable number to be tested.
  *
  */
 
