@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stddef.h>
 
+void la_fontaine(void) __attribute((constructor));
 /**
  * la_fontaine - function that prints before the main function is executed.
  */
