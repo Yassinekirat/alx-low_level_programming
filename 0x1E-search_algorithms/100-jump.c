@@ -9,31 +9,29 @@
 * Return: return the index of value, and if it doesn't exist return -1
 */
 
-#include <math.h>
-
 int jump_search(int *array, size_t size, int value)
 {
-	int prev_index = 0, jump_step = sqrt(size), array_length = (int)size;
+	size_t i = 0, jump = 0, step = sqrt(size);
 
-	if (!array || size == 0)
+	if (array == NULL || size == 0)
 		return (-1);
 
-	while (jump_step < array_length && array[jump_step] < value)
+	while (jump < size && array[jump] < value)
 	{
-		printf("Value checked array[%d] = [%d]\n", jump_step, array[jump_step]);
-		prev_index = jump_step;
-		jump_step += sqrt(size);
+		printf("Value checked array[%ld] = [%d]\n", jump, array[jump]);
+		i = jump;
+		jump += step;
 	}
 
-	printf("Value found between indexes [%d] and [%d]\n", prev_index, jump_step);
+	printf("Value found between indexes [%ld] and [%ld]\n", i, jump);
 
-	while (prev_index < array_length && prev_index <= jump_step)
+	jump = jump < size - 1 ? jump : size - 1;
+	while (i < jump && array[i] < value)
 	{
-		printf("Value checked array[%d] = [%d]\n", prev_index, array[prev_index]);
-		if (array[prev_index] == value)
-			return (prev_index);
-		prev_index++;
+		printf("Value checked array[%ld] = [%d]\n", i, array[i]);
+		i++;
 	}
+	printf("Value checked array[%ld] = [%d]\n", i, array[i]);
 
-	return (-1);
+	return (array[i] == value ? (int)i : -1);
 }
